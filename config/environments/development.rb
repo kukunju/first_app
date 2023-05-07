@@ -8,9 +8,6 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
-  #Brocked host のエラーで追加した
-  config.hosts << "69f7fd50f9124158a0ba9099822d4fba.vfs.cloud9.ap-northeast-1.amazonaws.com"
-
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -76,4 +73,8 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+  
+  #2-2で追加した、どんなホストからでもアクセスできるようになる
+  config.hosts.clear
+  
 end
